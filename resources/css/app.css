@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-hanken-grotesk: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+    --color-black: #060606;
+    --font-size-2xs: 0.625rem; 
+}
+
+@layer utilities {
+  .font-hanken-grotesk {
+    font-family: var(--font-hanken-grotesk);
+  }
+
+  .text-2xs {
+    font-size: var(--font-size-2xs);
+  }
+
+  input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white/10 inset; /* Same as bg-slate-800 or similar */
+    -webkit-text-fill-color: white;
+    caret-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+}
+
