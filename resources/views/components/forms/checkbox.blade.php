@@ -1,4 +1,5 @@
-@props(['label', 'name'])
+@props(['label', 'name', 'checked' => false])
+
 
 @php
     $defaults = [
@@ -9,9 +10,9 @@
     ];
 @endphp
 
-<x-forms.field :$label :$name>
+<x-forms.field :$label :$name :$checked>
     <div class="rounded-xl bg-white/10 border border-white/10 px-5 py-4 w-full">
-        <input {{ $attributes($defaults) }}>
+        <input {{ $attributes($defaults) }} {{ $checked }}>
         <span class="pl-1">{{ $label }}</span>
     </div>
 </x-forms.field>

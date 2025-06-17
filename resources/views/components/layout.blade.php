@@ -19,16 +19,18 @@
                 <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
             </a>
 
-            <div class="space-x-6 font-bold">
-                <a href="">Jobs</a>
+            <div class="space-x-6 font-bold self-center">
+                <a href="/">Jobs</a>
                 <a href="">Career</a>
                 <a href="">Salaries</a>
-                <a href="">Companies</a>
+                <a href="/companies">Companies</a>
             </div>
 
             @auth
                 <div class="space-x-6 font-bold flex">
                     <a href="/jobs/create">Post a job</a>
+
+                    <a href="/myjobs">My jobs</a>
 
                     <form method="POST" action="/logout">
                         @csrf

@@ -15,6 +15,7 @@
                 @foreach ($featuredJobs as $job)
                     <x-job-card :$job />
                 @endforeach
+
             </div>
 
         </section>
@@ -22,7 +23,7 @@
         <section>
             <x-section-heading>Tags</x-section-heading>
 
-            <div class="mt-6 space-x-1">
+            <div class="flex flex-wrap gap-x-1 gap-y-3 mt-6">
                 @foreach ($tags as $tag)
                     <x-tag :$tag />
                 @endforeach
@@ -37,6 +38,10 @@
                 @foreach ($jobs as $job)
                     <x-job-card-wide :$job />
                 @endforeach
+
+            </div>
+            <div>
+                {{ $jobs->links() }}
             </div>
         </section>
     </div>
