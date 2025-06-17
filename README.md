@@ -1,29 +1,28 @@
 ## Jobs Project — Laravel Practice App
 
-This is a simple job board application built with Laravel as part of the30 Days to Learn Laravel course on Laracasts.
+A simple job board application built with Laravel as part of the 30 Days to Learn Laravel course by Jeffrey Way on Laracasts.
 
-It was created to practice core Laravel concepts such as routing, controllers, Blade templates, models, migrations, and authentication.
+This project was created to practice and apply core Laravel concepts such as routing, controllers, Blade templates, models, migrations, authentication, and authorization.
 
 ## Current Features
 
 -   User registration, login, and logout
--   Job creation (authenticated users)
--   Edit and delete own jobs (with authorization)
+-   Authenticated job creation
+-   Edit and delete own jobs (with Laravel Policies)
 -   Jobs listing with pagination
 -   Search jobs by keyword or tag
 -   Tagging system
 -   Company listings
 -   Featured jobs section
 -   TailwindCSS styling
--   Authorization using Laravel Policies
 
 ## Tech Stack
 
-Laravel 10+
+Laravel 12
 
 PHP 8+
 
-MySQL or SQLite
+MySQL / SQLite
 
 Tailwind CSS
 
