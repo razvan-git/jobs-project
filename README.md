@@ -1,4 +1,4 @@
-## Jobs Project — Laravel Practice App
+## JobBoard Laravel
 
 A simple job board application built with Laravel as part of the 30 Days to Learn Laravel course by Jeffrey Way on Laracasts.
 
